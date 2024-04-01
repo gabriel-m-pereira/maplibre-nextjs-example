@@ -5,12 +5,14 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { MapPin } from "lucide-react";
 import { useState } from "react";
 import studios from "../../../data/studios.json";
-import API_KEY from "../../../API_KEY.json";
+// import API_KEY from "../../../API_KEY.json";
 import { Button } from "./ui/button";
 
 interface cityInfo {
   [key: string]: string | number;
 }
+
+const API_KEY = { API_KEY: "API_KEY" };
 
 const maps = [
   {
